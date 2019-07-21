@@ -1,0 +1,15 @@
+
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Simply Basic
+Comment=Simply Basic theme
+Encoding=UTF-8
+
+Name[en_US]=Simply Basic
+
+[X-GNOME-Metatheme]
+GtkTheme=Simply Basic
+MetacityTheme=Simply Basic
+IconTheme=ubuntu-mono-dark
+CursorTheme=DMZ-White
+ButtonLayout=close,minimize,maximize:
