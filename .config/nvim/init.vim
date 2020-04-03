@@ -36,7 +36,6 @@ Plug 'othree/html5.vim'
 Plug 'kovisoft/slimv', { 'for': ['clojure', 'scheme', 'racket'] }
 Plug 'wlangstroth/vim-racket', { 'for': 'racket' }
 
-
 Plug 'junegunn/goyo.vim'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -109,6 +108,7 @@ autocmd FileType json syntax match Comment +\/\/.\+$+
 let mapleader = ","
 vmap <leader>a <Plug>(coc-codeaction-selected)
 nmap <leader>a <Plug>(coc-codeaction-selected)
+
 
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
