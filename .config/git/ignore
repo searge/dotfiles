@@ -45,6 +45,8 @@ __pycache__
 # !.vscode/tasks.json
 # !.vscode/launch.json
 # !.vscode/extensions.json
+
+.vim/*
 XDG_CACHE_HOME
 
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
