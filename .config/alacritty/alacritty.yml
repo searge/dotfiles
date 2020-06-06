@@ -8,6 +8,11 @@ env:
   # `infocmp xterm-256color`.
   TERM: xterm-256color
 
+font:
+  normal:
+    family: MesloLGS NF
+    style: Regular
+
 window:
   # Window dimensions (changes require restart)
   #
