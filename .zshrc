@@ -66,14 +66,14 @@ export PATH=/opt/firefox-dev/firefox:$PATH
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/doc/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/searge/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/doc/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/doc/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "/home/searge/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/searge/anaconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/home/doc/anaconda3/bin:$PATH"
+        export PATH="/home/searge/anaconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
@@ -81,18 +81,6 @@ unset __conda_setup
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
-
-# Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
-export COCOS_CONSOLE_ROOT="/home/doc/Tools/cocos2d-x-4.0/tools/cocos2d-console/bin"
-export PATH=$COCOS_CONSOLE_ROOT:$PATH
-
-# Add environment variable COCOS_X_ROOT for cocos2d-x
-export COCOS_X_ROOT="/home/doc/Tools"
-export PATH=$COCOS_X_ROOT:$PATH
-
-# Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
-export COCOS_TEMPLATES_ROOT="/home/doc/Tools/cocos2d-x-4.0/templates"
-export PATH=$COCOS_TEMPLATES_ROOT:$PATH
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
