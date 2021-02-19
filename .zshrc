@@ -60,6 +60,10 @@ fi
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias h='function hdi(){ howdoi $* -c; }; hdi'
+# FLUTTER
+alias flutter="docker run --rm -e UID=$(id -u) -e GID=$(id -g) --workdir /project -v\
+       	\"$PWD\":/project matspfeiffer/flutter"
+alias flutter-start-emulator="xhost local:$USER && docker run --rm -ti -e UID=$(id -u) -e GID=$(id -g) -p 42000:42000 --workdir /project --device /dev/kvm --device /dev/dri:/dev/dri -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY -v "$PWD":/project --entrypoint flutter-android-emulator  matspfeiffer/flutter"
 
 # Firefox Developer
 export PATH=/opt/firefox-dev/firefox:$PATH
