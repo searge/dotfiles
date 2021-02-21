@@ -56,3 +56,6 @@ set path+=**
 
 " Display all matching files when we tab complete
 set wildmenu
+
+" Create the 'tags' file
+command! MakeTags !ctags -R .
