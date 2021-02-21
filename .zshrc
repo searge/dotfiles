@@ -60,6 +60,12 @@ fi
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias h='function hdi(){ howdoi $* -c; }; hdi'
+# EXA
+alias ls='exa --oneline --sort=ext'
+alias la='exa -hla'
+alias ll='exa -hl --sort=ext'
+alias llf='exa -lh --inode --blocks --git'
+alias tree2='exa -lh --tree --level=2 --git'
 # FLUTTER
 alias flutter="docker run --rm -e UID=$(id -u) -e GID=$(id -g) --workdir /project -v\
        	\"$PWD\":/project matspfeiffer/flutter"
