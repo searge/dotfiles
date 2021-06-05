@@ -3,7 +3,7 @@
 	[
 		{
 			"characters": ".",
-			"selector": "source.python"
+			"selector": "source.python",
 		}
 	],
 	"caret_extra_width": 2,
@@ -35,7 +35,7 @@
 	"ignored_packages":
 	[
 		"Markdown",
-		"Vintage"
+		"Vintage",
 	],
 	"line_padding_top": 1,
 	"rulers":
@@ -47,5 +47,5 @@
 	"theme": "ayu-mirage.sublime-theme",
 	"update_check": false,
 	"word_wrap": true,
-	"wrap_width": 92
+	"wrap_width": 92,
 }
