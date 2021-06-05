@@ -27,7 +27,7 @@ HIST_STAMPS="dd.mm.yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(ansible pip python ruby rvm gem golang cargo node npm \
+plugins=(ansible pip python poetry ruby rvm gem golang cargo node npm \
 	fzf git github wakatime mosh \
 	zsh-autosuggestions zsh-syntax-highlighting \
 	colorize colored-man-pages)
@@ -73,6 +73,9 @@ alias flutter-start-emulator="xhost local:$USER && docker run --rm -ti -e UID=$(
 
 # Firefox Developer
 export PATH=/opt/firefox-dev/firefox:$PATH
+# Spicetify
+export SPICETIFY_INSTALL="/home/searge/spicetify-cli"
+export PATH="$SPICETIFY_INSTALL:$PATH"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -88,6 +91,8 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+# POETRY
+export PATH="$PATH:$HOME/.poetry/bin"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
@@ -120,3 +125,5 @@ load-nvmrc
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+export PATH="$HOME/.poetry/bin:$PATH"
