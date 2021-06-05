@@ -5,7 +5,13 @@ Xft.hinting:            true
 Xft.autohint:           true
 Xft.hintstyle:          hintslight
 
-URxvt*font:             xft:Fira Code:pixelsize=15:antialias=true,\
+! Sixel support
+XTerm*decTerminalID: vt340
+XTerm*sixelScrolling: true
+XTerm*regisScreenSize: 1920x1080
+XTerm*numColorRegisters: 256
+
+URxvt*font:             xft:MesloLGS NF:pixelsize=15:antialias=true,\
                         xft:PowerlineSymbols,xft:OpenSymbol,xft:Noto Emoji:minspace=False,\
                         -*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
 URxvt*boldFont:         xft:Fira Code:pixelsize=15:style=bold:antialias=true:hinting=true,\
