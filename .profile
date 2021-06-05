@@ -37,3 +37,5 @@ export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="$HOME/.cargo/bin:$PATH"
 
 export ANACONDA="$HOME/anaconda3"
+
+export PATH="$HOME/.poetry/bin:$PATH"
