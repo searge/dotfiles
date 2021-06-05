@@ -30,9 +30,6 @@ Temporary Items
 *.pyc
 __pycache__
 
-# GIT
-.gitignore
-
 # JUPITER
 .ipynb_checkpoints
 
