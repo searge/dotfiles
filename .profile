@@ -25,17 +25,3 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
-
-export GOPATH=$HOME/Scripts
-export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
-export PATH="$HOME/.cargo/bin:$PATH"
-
-export ANACONDA="$HOME/anaconda3"
-
-export PATH="$HOME/.poetry/bin:$PATH"
