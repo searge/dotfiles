@@ -26,7 +26,19 @@ plugins=(golang \
 
 source $ZSH/oh-my-zsh.sh
 
+# User specific aliases and functions
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+  test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+  alias ls='ls --color=auto'
+
+  alias grep='grep --color=auto'
+fi
+
 export EDITOR='vim'
+
+export LESS='-R'
+export LESSOPEN='|~/.lessfilter %s'
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -40,8 +52,8 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 function cht { curl "cht.sh/$1"; }
 
 # some more ls aliases
-alias ll='ls -alFht'
-alias la='ls -A'
+alias ll='ls -lht'
+alias la='ls -lhFtA'
 alias l='ls -CF'
 
 # Enable autocompletion
@@ -57,3 +69,6 @@ source <(helm completion zsh)
 # Create d alias for helm and enable autocompletion
 alias h=helm
 complete -F __start_helm h
+
+# Starship init
+eval "$(starship init zsh)"
