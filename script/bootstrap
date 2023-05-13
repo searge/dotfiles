@@ -1,9 +1,16 @@
 #!/usr/bin/env bash
 set -e
 
+# Check if nvm is installed and use default version
+if ! command -v nvm &> /dev/null
+then
+    echo "nvm could not be found"
+else
+    # nvm install node
+    nvm use default
+fi
+
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-
 
 exit $?
