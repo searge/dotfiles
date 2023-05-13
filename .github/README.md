@@ -1,3 +1,3 @@
-# dotfiles
+# Dotfiles for GitHub Codespaces
 
-![Pop_OS Desktop](https://i.imgur.com/xOc0AG6.png)
+[![GitHub Codespaces](https://i.imgur.com/4BWbfhg.png)](https://imgur.com/4BWbfhg)
