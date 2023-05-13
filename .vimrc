@@ -15,7 +15,7 @@ Plug 'ekalinin/Dockerfile.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 call plug#end()
 
-set number
+" set number
 highlight LineNr ctermfg=grey
 syntax on
 filetype plugin on
