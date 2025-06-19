@@ -1,3 +1,20 @@
-# Dotfiles for GitHub Codespaces
+# Dotfiles for Servers
 
-[![GitHub Codespaces](https://i.imgur.com/4BWbfhg.png)](https://imgur.com/gallery/079FJlK)
+File structure:
+
+```bash
+.
+├── .bash_profile
+├── .bashrc
+├── .bashrc.d
+│  ├── aliases.bash
+│  ├── env.bash
+│  ├── functions.bash
+│  └── prompt.bash
+├── .config
+│  └── starship.toml
+├── .vimrc
+├── .zprofile
+├── .zshenv
+└── .zshrc
+```
