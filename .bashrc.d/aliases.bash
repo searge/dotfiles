@@ -33,3 +33,24 @@ alias ip='ip -color=auto'
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
+
+# Kubernetes aliases
+if command -v kubectl &> /dev/null
+then
+    # Enable autocompletion
+    source <(kubectl completion bash)
+
+    # Create alias k for kubectl and enable autocompletion
+    alias k=kubectl
+    complete -F __start_kubectl k
+fi
+
+if command -v helm &> /dev/null
+then
+    # Enable autocompletion
+    source <(helm completion bash)
+
+    # Create d alias for helm and enable autocompletion
+    alias h=helm
+    complete -F __start_helm h
+fi
