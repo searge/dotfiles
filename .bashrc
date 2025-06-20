@@ -19,8 +19,6 @@ if ! [[ "$PATH" =~ "$HOME/.local/bin:" ]]; then
 fi
 export PATH
 
-export bashrc_d=$HOME/.bashrc.d
-
 # BEGIN - Bash history configuration
 # History length and size
 export HISTSIZE=1000
@@ -34,10 +32,6 @@ PROMPT_COMMAND='history -a'
 
 export HISTIGNORE="ls:ll:history:w:htop:pwd:exit"
 # END - Bash history configuration
-
-# Ignore case on auto-completion
-# Note: bind used instead of sticking these in .inputrc
-if [[ $iatest > 0 ]]; then bind "set completion-ignore-case on"; fi
 
 # User specific aliases and functions
 if [ -d ~/.bashrc.d ]; then
