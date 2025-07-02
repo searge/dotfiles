@@ -1,3 +1,28 @@
 # Dotfiles for GitHub Codespaces
 
-[![GitHub Codespaces](https://i.imgur.com/4BWbfhg.png)](https://imgur.com/gallery/079FJlK)
+```bash
+.
+├── .bashrc.d
+│  ├── aliases.bash
+│  ├── env.bash
+│  ├── functions.bash
+│  └── prompt.bash
+├── .config
+│  ├── k9s
+│  │  ├── skins
+│  │  │  └── nord.yaml
+│  │  ├── aliases.yaml
+│  │  └── config.yaml
+│  └── starship.toml
+├── .devcontainer
+│  └── devcontainer.json
+├── .github
+│  └── README.md
+├── .bash_profile
+├── .bashrc
+├── .vimrc
+├── .wakatime.cfg
+├── .zprofile
+├── .zshenv
+└── .zshrc
+```
