@@ -30,11 +30,10 @@
 		"gray_antialias",
 		"subpixel_antialias"
 	],
-	"font_size": 12,
+	"font_size": 11,
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Markdown",
 		"Vintage",
 	],
 	"line_padding_top": 1,
@@ -48,4 +47,5 @@
 	"update_check": false,
 	"word_wrap": true,
 	"wrap_width": 92,
+	"index_files": true,
 }

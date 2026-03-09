@@ -1,17 +1,44 @@
 [global_config]
-  borderless = True
-  title_transmit_bg_color = "#574f4a"
-  title_receive_bg_color = "#82bf8c"
-  title_inactive_fg_color = "#c0bebf"
-  title_inactive_bg_color = "#625953"
+  geometry_hinting = True
+  inactive_color_offset = 0.9038961038961039
+  enabled_plugins = TerminalShot, LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler
+  suppress_multiple_term_dialog = True
+  always_split_with_profile = True
+  title_at_bottom = True
 [keybindings]
 [profiles]
   [[default]]
-    background_color = "#282828"
-    cursor_color = "#aaaaaa"
-    foreground_color = "#ebdbb2"
+    background_darkness = 1.0
+    font = Hack NFM 11
     scrollbar_position = hidden
-    palette = "#282828:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#a89984:#928374:#fb4934:#b8bb26:#fabd2f:#83a598:#d3869b:#8ec07c:#ebdbb2"
+    use_system_font = False
+    use_theme_colors = True
+    title_transmit_fg_color = "#d8dee9"
+    title_transmit_bg_color = "#2e3440"
+    title_receive_fg_color = "#ebcb8b"
+    title_receive_bg_color = "#5e81ac"
+    title_inactive_fg_color = "#2e3440"
+    title_inactive_bg_color = "#4c566a"
+    title_use_system_font = False
+    title_font = IBM Plex Sans 9
+  [[nord]]
+    background_color = "#2e3440"
+    background_darkness = 0.98
+    background_type = transparent
+    font = Hack NFM 10
+    foreground_color = "#d8dee9"
+    scrollbar_position = hidden
+    scrollback_lines = 10000
+    palette = "#3b4252:#bf616a:#a3be8c:#ebcb8b:#81a1c1:#b48ead:#88c0d0:#e5e9f0:#4c566a:#bf616a:#a3be8c:#ebcb8b:#81a1c1:#b48ead:#8fbcbb:#eceff4"
+    use_system_font = False
+    title_transmit_fg_color = "#d8dee9"
+    title_transmit_bg_color = "#2e3440"
+    title_receive_fg_color = "#ebcb8b"
+    title_receive_bg_color = "#5e81ac"
+    title_inactive_fg_color = "#d8dee9"
+    title_inactive_bg_color = "#4c566a"
+    title_use_system_font = False
+    title_font = IBM Plex Sans 9
 [layouts]
   [[default]]
     [[[window0]]]
@@ -20,4 +47,5 @@
     [[[child1]]]
       type = Terminal
       parent = window0
+      profile = nord
 [plugins]

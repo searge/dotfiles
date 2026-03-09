@@ -41,7 +41,7 @@ __pycache__
 # !.vscode/settings.json
 # !.vscode/tasks.json
 # !.vscode/launch.json
-# !.vscode/extensions.json
+!.vscode/extensions.json
 
 .vim/*
 XDG_CACHE_HOME
@@ -54,3 +54,10 @@ XDG_CACHE_HOME
 
 # JIRA plugin
 atlassian-ide-plugin.xml
+
+# AI
+**/.claude/settings.local.json
+.mcp.json
+CLAUDE.md
+.codacy
+.cursor
