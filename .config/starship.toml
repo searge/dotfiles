@@ -7,18 +7,16 @@ $username\
 $directory\
 $git_branch\
 $git_status\
-$c\
-$rust\
+$python\
 $golang\
 $nodejs\
-$php\
-$java\
-$kotlin\
-$haskell\
-$python\
+$rust\
+$kubernetes\
 $docker_context\
 $time\
 $line_break$character"""
+
+scan_timeout = 100
 
 palette = 'nord'
 
