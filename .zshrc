@@ -20,10 +20,19 @@ plugins=(
 
 source "$ZSH/oh-my-zsh.sh"
 
-for rc in "$HOME"/.zshrc.d/*.zsh(N); do
+ZSHRC_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/zshrc.d"
+for rc in "$ZSHRC_DIR"/*.zsh(N); do
   [ -f "$rc" ] && source "$rc"
 done
 unset rc
+
+LEGACY_ZSHRC_DIR="$HOME/.zshrc.d"
+if [ "$LEGACY_ZSHRC_DIR" != "$ZSHRC_DIR" ] && [ -d "$LEGACY_ZSHRC_DIR" ]; then
+  for rc in "$LEGACY_ZSHRC_DIR"/*.zsh(N); do
+    [ -f "$rc" ] && source "$rc"
+  done
+  unset rc
+fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
