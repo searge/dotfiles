@@ -3,7 +3,12 @@ export EDITOR='vim'
 export LESS=FRX
 
 # Secrets (kept outside public dotfiles)
-[ -f "$HOME/.config/secrets/workstation.env" ] && . "$HOME/.config/secrets/workstation.env"
+if [ -d "${XDG_CONFIG_HOME:-$HOME/.config}/secrets" ]; then
+  for envfile in "${XDG_CONFIG_HOME:-$HOME/.config}/secrets/"*.sh(N); do
+    [ -f "$envfile" ] && source "$envfile"
+  done
+  unset envfile
+fi
 
 export BAT_THEME="OneHalfDark"
 

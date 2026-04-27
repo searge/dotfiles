@@ -1,0 +1,93 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "agent_servers": {
+    "codex-acp": {
+      "type": "registry",
+    },
+    "claude-acp": {
+      "type": "registry",
+    },
+  },
+  "project_panel": {
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "agent": {
+    "dock": "right",
+    "default_model": {
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6-latest",
+      "enable_thinking": false,
+    },
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "git_panel": {
+    "dock": "left",
+    "tree_view": true,
+  },
+  "line_indicator_format": "long",
+  "sticky_scroll": {
+    "enabled": true, // Whether to stick scopes to the top of the editor. Disabled by default.
+  },
+  "base_keymap": "SublimeText",
+  "icon_theme": "Material Icon Theme",
+  "ui_font_family": "IBM Plex Sans",
+  "ui_font_fallbacks": ["Helvetica", "Noto Sans", ".ZedSans"],
+  "ui_font_size": 16,
+  "buffer_font_size": 14,
+  "buffer_font_weight": 500,
+  "buffer_font_family": "Victor Mono",
+  "buffer_font_fallbacks": ["Fira Code", "IBM Plex Mono", "Noto Color Emoji"],
+  "buffer_line_height": "comfortable",
+  "current_line_highlight": "gutter",
+  "hide_mouse": "on_typing",
+  "theme": {
+    "mode": "system",
+    "light": "Nord Light",
+    "dark": "Nord Dark",
+  },
+  "title_bar": {
+    "show_branch_status_icon": true,
+    "show_branch_name": true,
+  },
+  "tabs": {
+    "close_position": "left",
+    "file_icons": false,
+    "git_status": false,
+  },
+  "terminal": {
+    "blinking": "on",
+    "font_family": "0xProto Nerd Font Mono",
+    "font_fallbacks": ["Hack Nerd Font Mono", "Noto Color Emoji"],
+    "font_size": 14,
+    "line_height": "standard",
+    "font_features": {
+      "calt": true,
+    },
+  },
+  "autosave": "on_focus_change",
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/.jj",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings",
+  ],
+}
