@@ -7,7 +7,10 @@ end
 # NodeJS - PNPM
 set -gx PNPM_HOME "$HOME/.local/share/pnpm"
 if test -d "$PNPM_HOME"
-    fish_add_path -g "$PNPM_HOME"
+    fish_add_path -g --move "$PNPM_HOME"
+end
+if test -d "$PNPM_HOME/bin"
+    fish_add_path -g --move "$PNPM_HOME/bin"
 end
 
 # Bun
